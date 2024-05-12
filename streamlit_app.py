@@ -2,6 +2,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import plotly
 
 
 data_url = "https://raw.githubusercontent.com/davis011235/Econ8200/main/df.csv"
