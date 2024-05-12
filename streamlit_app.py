@@ -2,8 +2,15 @@
 import streamlit as st
 import pandas as pd
 
-url = "https://raw.githubusercontent.com/davis011235/Econ8200/main/df.csv"
-data = pd.read_csv(url)
+data_url = "https://raw.githubusercontent.com/davis011235/Econ8200/main/df.csv"
+
+@st.cache_data
+def load_data(url):
+    df = pd.read_csv(url)
+    return df
+
+data = load_data(data_url)
+
 
 x = st.sidebar.selectbox(
     'x variable',
