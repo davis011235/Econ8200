@@ -8,7 +8,9 @@ data = pd.read_csv(url)
 x = st.sidebar.selectbox(
     'x variable',
     ('Year' , 'GTCBSA', 'PEHRUSLT' , ' PEDIPGED' , 'PECYC' , 'PEAFEVER' , 'PEAFNOW' , 'PEERNHRO', 'PEERNLAB', 'HEFAMINC', 'HRNUMHOU')
+)
 y = st.sidebar.selectbox(
     'y variable',
     ('Year' , 'GTCBSA', 'PEHRUSLT' , ' PEDIPGED' , 'PECYC' , 'PEAFEVER' , 'PEAFNOW' , 'PEERNHRO', 'PEERNLAB', 'HEFAMINC', 'HRNUMHOU')
+)
 st.scatter_chart(data = data, x = x , y = y)
