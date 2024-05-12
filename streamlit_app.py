@@ -2,5 +2,5 @@
 import streamlit as st
 import pandas as pd
 
-url = "https://raw.githubusercontent.com/davis011235/Econ8200/main/df.csv?token=GHSAT0AAAAAACRMRKOZ62D2RPU3CQ3IO4DKZSAC3WA"
+url = "https://raw.githubusercontent.com/davis011235/Econ8200/main/df.csv"
 data = pd.read_csv(url)
