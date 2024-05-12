@@ -18,7 +18,7 @@ x = st.sidebar.selectbox(
 )
 y = st.sidebar.selectbox(
     'y variable',
-    ('Year' , 'GTCBSA', 'PEHRUSLT' , ' PEDIPGED' , 'PECYC' , 'PEAFEVER' , 'PEAFNOW' , 'PEERNHRO', 'PEERNLAB', 'HEFAMINC', 'HRNUMHOU')
+    ('None', 'Year' , 'GTCBSA', 'PEHRUSLT' , ' PEDIPGED' , 'PECYC' , 'PEAFEVER' , 'PEAFNOW' , 'PEERNHRO', 'PEERNLAB', 'HEFAMINC', 'HRNUMHOU')
 )
 
 st.scatter_chart(data = data, x = x, y = y)
