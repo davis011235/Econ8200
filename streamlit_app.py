@@ -21,4 +21,23 @@ y = st.sidebar.selectbox(
     ('None', 'Year' , 'GTCBSA', 'PEHRUSLT' , ' PEDIPGED' , 'PECYC' , 'PEAFEVER' , 'PEAFNOW' , 'PEERNHRO', 'PEERNLAB', 'HEFAMINC', 'HRNUMHOU')
 )
 
-st.scatter_chart(data = data, x = x, y = y)
+#st.scatter_chart(data = data, x = x, y = y)
+
+
+
+
+import plotly.express as px
+
+@st.cache
+def load_data():
+    return pd.read_csv("https://people.sc.fsu.edu/~jburkardt/data/csv/airtravel.csv")
+
+df = load_data()
+
+st.title("Air Travel Time Series Plot")
+
+st.write("This chart shows the number of air passenger traveled in each month from 1949 to 1960")
+
+fig = px.line(df, x="Month", y="Passengers", title="Air Passenger Travel")
+
+st.plotly_chart(fig)
