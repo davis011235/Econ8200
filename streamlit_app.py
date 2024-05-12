@@ -5,4 +5,4 @@ import pandas as pd
 url = "https://raw.githubusercontent.com/davis011235/Econ8200/main/df.csv"
 data = pd.read_csv(url)
 
-st.scatter_chart(data = data, x = "Year", y = "PEHRUSLT")
+st.scatter_chart(data = data, x = "PEDIPGED", y = "PEHRUSLT")
