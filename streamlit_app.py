@@ -23,3 +23,5 @@ y = st.sidebar.selectbox(
 )
 
 st.scatter_chart(data = data, x = x, y = y)
+
+fig = px.scatter(data = data, x = x, y = y)
