@@ -22,7 +22,7 @@ y = st.sidebar.selectbox(
     ('Year' , 'GTCBSA', 'PEHRUSLT' , ' PEDIPGED' , 'PECYC' , 'PEAFEVER' , 'PEAFNOW' , 'PEERNHRO', 'PEERNLAB', 'HEFAMINC', 'HRNUMHOU')
 )
 
-fig = px.scatter(data = data, x = x, y = y)
-st.plotly_chart(fig)
+#fig = px.scatter(data = data, x = x, y = y)
+#st.plotly_chart(fig)
 
 #st.scatter_chart(data = data, x = x, y = y)
