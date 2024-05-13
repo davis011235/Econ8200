@@ -22,4 +22,4 @@ y = st.sidebar.selectbox(
     ('Year' , 'GTCBSA', 'PEHRUSLT' , ' PEDIPGED' , 'PECYC' , 'PEAFEVER' , 'PEAFNOW' , 'PEERNHRO', 'PEERNLAB', 'HEFAMINC', 'HRNUMHOU')
 )
 
-st.scatter_chart(data = data, x = x, y = y, use_container_width=False)
+st.scatter_chart(data = data, x = x, y = y)
